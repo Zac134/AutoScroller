@@ -7,7 +7,7 @@ public class MouseOver : MonoBehaviour
     void OnMouseOver()
     {
 
-        this.transform.localScale = new Vector3(4, 5.6f, 2);
+        this.transform.localScale = new Vector3(4, 5.6f, 1);
         Debug.Log("We're on");
 
     }
@@ -18,5 +18,5 @@ public class MouseOver : MonoBehaviour
         Debug.Log("out");
 
     }
-
+    
 }
