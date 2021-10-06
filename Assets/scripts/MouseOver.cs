@@ -8,14 +8,12 @@ public class MouseOver : MonoBehaviour
     {
 
         this.transform.localScale = new Vector3(4, 5.6f, 1);
-        Debug.Log("We're on");
 
     }
     void OnMouseExit()
     {
 
         this.transform.localScale = new Vector3(2, 2.8f, 1);
-        Debug.Log("out");
 
     }
     

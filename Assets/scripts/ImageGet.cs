@@ -30,9 +30,7 @@ public class ImageGet : MonoBehaviour
 
         int objname = int.Parse(obj.name);
 
-        string ur = jsonDate.Items[objname].Item.largeImageUrl;
-
-        string url = ur.Replace("?_ex=120x120", "");
+        string url = jsonDate.Items[objname].Item.largeImageUrl;
 
         UnityWebRequest www = UnityWebRequestTexture.GetTexture(url);
 

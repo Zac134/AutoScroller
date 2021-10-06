@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using System.Runtime.InteropServices;
 
 
-public class MyObject : MonoBehaviour, IPointerClickHandler
+public class MyObject : MonoBehaviour
 {
     [SerializeField] GameObject any;
 
@@ -18,7 +18,7 @@ public class MyObject : MonoBehaviour, IPointerClickHandler
 
 #endif
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void OnMouseButtonDown()
     {
         string json = Resources.Load<TextAsset>("楽天API").ToString();
 
@@ -29,6 +29,8 @@ public class MyObject : MonoBehaviour, IPointerClickHandler
         string url = jsonDate.Items[objname].Item.affiliateUrl;
 
         OpenNewTab(url);
+
+        Debug.Log("down");
     }
 
 }
