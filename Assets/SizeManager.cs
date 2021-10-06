@@ -7,10 +7,7 @@ public class SizeManager : MonoBehaviour
 
     private void Start()
     {
-        for(int g = 0; g >= 0; ++g)
-        {
-            Debug.Log(g);
-        }
+     //順番にオブジェクトを大きくするスクリプト
     }
 
 }
