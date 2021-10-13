@@ -18,7 +18,7 @@ public class MyObject : MonoBehaviour
 
 #endif
 
-    public void OnMouseButtonDown()
+    public void OnMouseDown()
     {
         string json = Resources.Load<TextAsset>("楽天API").ToString();
 
